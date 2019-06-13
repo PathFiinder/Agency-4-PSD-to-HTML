@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CAAG;;AAE7B,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,KAAK;EACjB,gBAAgB,EAAE,GAAG;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_header.sass",
+        "../sass/_slogan.sass",
+        "../sass/_about.sass",
+        "../sass/_services.sass",
+        "../sass/_work.sass",
+        "../sass/_team.sass",
+        "../sass/_clients.sass",
+        "../sass/_contact.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
