@@ -1,0 +1,97 @@
+.slogan
+    height: 100vh
+    overflow: hidden
+    position: relative
+    color: white
+    background-image: url('/images/slogan_bgc.png')
+    background-color: #bb2d39
+    background-blend-mode: multiply
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+   
+    .header
+        height: 50px
+        overflow: hidden
+        position: relative
+        z-index: 1
+        &--active
+            height: 200px
+        &__title
+            font-size: 26px
+            line-height: 50px
+            margin-left: 10px
+        &__menu
+            display: none
+            z-index: 0
+            &--active
+                display: block
+                height: 150px
+            .header__list
+                height: 100%
+                display: flex
+                flex-direction: column
+                overflow: hidden
+                background-color: rgba(0,0,0,0.5)
+                .header__item
+                    height: 14.28%
+                    list-style: none
+                    text-align: center
+                    .header__link
+                        text-decoration: none
+                        font-family: Lato
+                        color: white
+                        text-transform: uppercase
+                        display: inline-block
+                        width: 100%
+                        &:hover
+                            color: orange
+        &__icons-wrapper
+            position: absolute
+            top: calc((50px - 20px)/2)
+            right: 10px
+            font-size: 20px
+            .header__icon
+                margin-left: 5px
+   
+    &__title
+        text-transform: uppercase
+        position: absolute
+        bottom: 70px
+        left: 0
+        text-align: center
+        font-size: 35px
+        background-image: url('/images/slogan_bgc.png')
+        background-color: #fafafa
+        background-blend-mode: multiply
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        
+    
+    &__button
+        position: absolute
+        bottom: 20px
+        left: 50%
+        transform: translateX(-50%)
+        border: none
+        color: black
+        text-transform: uppercase
+        padding: 12px
+        border-radius: 25px
+        font-size: 12px
+        font-weight: bold
+        background-color: white
+        font-family: Lato
+
+    &__model
+        position: absolute
+        top: 100px
+        left: 0
+        
+        &--image
+            height: 100%
+            width: 100%       
+            
