@@ -17,7 +17,7 @@ body {
   overflow: hidden;
   position: relative;
   color: white;
-  background-image: url("/images/slogan_bgc.png");
+  background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/slogan_bgc.png");
   background-color: #bb2d39;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
@@ -102,7 +102,7 @@ body {
   left: 0;
   text-align: center;
   font-size: 35px;
-  background-image: url("/images/slogan_bgc.png");
+  background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/slogan_bgc.png");
   background-color: #fafafa;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
