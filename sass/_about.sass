@@ -1,3 +1,46 @@
 .about-company
     height: 100vh
     background-color: white
+    text-align: center
+    position: relative
+    overflow: hidden
+    &__title
+        font-family: "Peace Sans"
+        font-weight: 400
+        color: #494949
+        font-size: 28px
+        margin: 10px 0 
+    &__content
+        width: 80%
+        margin: 0 auto
+        font-size: 20px
+        color: #6a6a6a
+    &__button
+        margin: 10px auto
+        padding: 5px
+        border: none
+        color: white
+        text-transform: uppercase
+        padding: 12px
+        border-radius: 25px
+        font-size: 12px
+        font-weight: bold
+        background-color: #bc2e3a
+        font-family: Lato
+    &__image-wrapper
+        position: absolute
+        &--laptop
+            bottom: 20px
+            left: 0
+            z-index: 1
+        &--triangle
+            bottom: 0
+            left: 0
+            z-index: 0
+        .about-company__image
+            height: 100%
+            width: 100%
+            &--triangle
+                transform: rotate(180deg)
+                
+                
