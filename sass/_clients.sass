@@ -1,0 +1,95 @@
+.clients
+    height: 100vh
+    background-color: white
+    position: relative
+    z-index: 1
+    &__title
+        font-family: "Peace Sans"
+        font-weight: 400
+        color: #494949
+        font-size: 28px
+        padding-top: 50px
+        margin-bottom: 10px
+        text-align: center
+    &__wrapper
+        overflow: hidden
+        width: 90%
+        height: 400px
+        margin: 0 auto
+        text-align: center
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        .clients__single-item
+            width: 100%
+            flex-basis: 100%
+            .item__image
+                height: 220px
+                width: 220px
+            .item__container
+                height: 180px
+                overflow: hidden
+                position: relative
+                .container__image
+                    height: 40px
+                    width: 40px  
+                    position: absolute
+                    top: 10px
+                    left: 10px    
+                .container__content
+                    width: 80%
+                    position: absolute
+                    top: 10px
+                    right: 0
+                    font-size: 14px 
+                    text-align: start
+                    color: #6a6a6a
+                    font-family: "Open Sans"
+                .container__author
+                    position: absolute
+                    bottom: 25px
+                    right: 0
+                    font-size: 18px
+                    color: black
+                    font-family: "Open Sans"
+                    font-weight: 700
+            &--first
+                display: block
+            &--sendond, 
+                display: none
+            &--third
+                display: none
+    &__miniature-images
+        overflow: hidden
+        height: 60px
+        width: 60%
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        .miniature-images__photo
+            flex-basis: 33.33%
+            height: 100%
+            &--active
+                border-bottom: 2px solid black
+    &__triangle--black
+        position: absolute
+        top: 0
+        right: 0
+        width: 0
+        height: 0
+        border-top: 100px solid black
+        border-left: 100px solid transparent
+    &__triangle--red
+        width: 0
+        height: 0
+        border-top: 58vh solid transparent
+        border-left: 150px solid #bc2e3a
+        border-bottom: 58vh solid transparent
+        position: absolute
+        top: -8vh
+        left: 0
+        z-index: -1
+
+                
+               

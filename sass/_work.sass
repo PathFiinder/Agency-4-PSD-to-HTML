@@ -1,8 +1,9 @@
 .company-work
     height: 100vh
     background-color: white
-    z-index: 0
+    z-index: 1
     text-align: center
+    position: relative
     &__title
         font-family: "Peace Sans"
         font-weight: 400
@@ -13,16 +14,80 @@
         text-align: center
     &__content
         width: 80%
-        margin: 0 auto
+        margin: 0 auto 10px auto
         text-align: start
         color: #6a6a6a
         font-size: 17px
+    &__button
+        border: 1px solid black
     &__wrapper
         display: flex
         flex-direction: row
         flex-wrap: no-wrap
-        background-color: red
         margin: 30px 0px 0px 0px
         height: 180px
+        width: 100%
+        overflow: hidden
         .company-work__single-item
             flex-basis: 33.33%
+            transform: skew(-20deg)
+            background-color: rgba(0,0,0,0.6)
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center
+            margin-right: 10px
+            color: white
+            position: relative
+            &--idea
+                background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/work_1.png")
+                margin-left: -25px
+            &--design
+                background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/work_2.png")
+            &--output
+                background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/work_3.png")
+            .company-work_image-title
+                text-transform: uppercase
+                transform: skew(20deg)
+                position: absolute
+                bottom: 10px
+                left: 15px
+                &--idea
+                    bottom: 137px
+                    left: 6px
+            .company-work__image-content
+                transform: skew(20deg)
+                width: 60%
+                font-size: 13px
+                font-family: "Open Sans"
+                position: absolute
+                top: 45px
+                left: 28px
+                text-align: start
+            .company-work__image-counter
+                position: absolute
+                top: 0
+                right: 20px
+                font-family: Lato
+                font-weight: 700
+                text-transform: uppercase
+                transform: skew(20deg)
+                font-size: 25px
+    &__image-figure
+        position: absolute
+        top: -25%
+        right: -50%
+        z-index: -1
+        height: 150%
+        width: 100%
+        .company-work__image
+            height: 100%
+            width: 100%
+    &-team__image-figure
+        height: 120px
+        width: 120px
+        position: absolute
+        bottom:  -60px
+        left: -60px
+        .company-work-team__image
+            height: 100%
+            width: 100%
