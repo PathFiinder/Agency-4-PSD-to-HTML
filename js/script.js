@@ -21,7 +21,7 @@ rightArrow.addEventListener('click', () => {
         index = 0;
     }
     [...teamArray].forEach(element => element.classList.remove('team__slider__item--active'));
-    document.querySelector(`[data-id="${index}"]`).classList.add('team__slider__item--active');
+    document.querySelector(`[data-idt="${index}"]`).classList.add('team__slider__item--active');
 });
 
 leftArrow.addEventListener('click', () => {
@@ -30,7 +30,7 @@ leftArrow.addEventListener('click', () => {
         index = 2;
     }
     [...teamArray].forEach(element => element.classList.remove('team__slider__item--active'));
-    document.querySelector(`[data-id="${index}"]`).classList.add('team__slider__item--active');
+    document.querySelector(`[data-idt="${index}"]`).classList.add('team__slider__item--active');
 })
 
 
@@ -49,4 +49,4 @@ const clientsArray = document.querySelectorAll('.clients__single-item');
         document.querySelector(`[data-id = "${event.target.dataset.idm}"]`).style.display = "block";
     })
 
-})
+}) 
