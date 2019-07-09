@@ -39,9 +39,8 @@
             flex-direction: row
             flex-wrap: nowrap
             .team__slider__item 
-                flex-basis: 33.33%
+                flex-basis: 100%
                 list-style: none
-                //background-color: blue
                 width: 200px
                 height: 300px
                 position: absolute
@@ -81,7 +80,8 @@
                     .team__slider__standing
                         font-size: 12px
                         transform: skew(-20deg)
-            .team__slider__item--first
-                //left: 10%             
-
+            .team__slider__item--first,.team__slider__item--second,.team__slider__item--third    
+                z-index: 0
+            .team__slider__item--active
+                z-index: 1
 

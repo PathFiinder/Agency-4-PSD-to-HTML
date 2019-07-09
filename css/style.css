@@ -136,7 +136,7 @@ body {
 
 .slogan__model-figure {
   position: absolute;
-  top: 100px;
+  bottom: 130px;
   left: 0;
 }
 
@@ -278,18 +278,18 @@ body {
   margin-bottom: 10px;
 }
 
-.company-services__image-figure {
+.company-services__triangle {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-right: 100px solid #bc2e3a;
+  border-bottom: 150px solid transparent;
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: -1;
-}
-
-.company-services__image-figure .company-servies__image {
-  height: 320px;
-  width: 320px;
 }
 
 .company-work {
@@ -491,8 +491,8 @@ body {
 }
 
 .team__slider-wrapper .team__slider__main .team__slider__item {
-  -ms-flex-preferred-size: 33.33%;
-      flex-basis: 33.33%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   list-style: none;
   width: 200px;
   height: 300px;
@@ -548,6 +548,14 @@ body {
   font-size: 12px;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
+}
+
+.team__slider-wrapper .team__slider__main .team__slider__item--first, .team__slider-wrapper .team__slider__main .team__slider__item--second, .team__slider-wrapper .team__slider__main .team__slider__item--third {
+  z-index: 0;
+}
+
+.team__slider-wrapper .team__slider__main .team__slider__item--active {
+  z-index: 1;
 }
 
 .clients {
@@ -694,10 +702,127 @@ body {
   background-color: black;
   height: 100vh;
   color: white;
+  background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/contact__image.png");
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  z-index: 0;
 }
 
-.footer {
-  background-color: green;
-  height: 200px;
+.contact__title {
+  font-family: "Peace Sans";
+  font-weight: 400;
+  color: #9f9f9f;
+  font-size: 30px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: columm;
+          flex-direction: columm;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: start;
+}
+
+.contact__wrapper .contact__single-item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.contact__wrapper .contact__single-item .single-item__icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.contact__wrapper .contact__single-item .single-item__title {
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  left: 30%;
+}
+
+.contact__wrapper .contact__single-item .single-item__content {
+  width: 60%;
+  position: absolute;
+  top: 35px;
+  left: 30%;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.contact .footer {
+  overflow: hidden;
+  height: 120px;
+  margin-top: 80px;
+}
+
+.contact .footer .footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 20px auto 5px auto;
+  width: 60%;
+}
+
+.contact .footer .footer__list .footer__item {
+  list-style: none;
+  -ms-flex-preferred-size: calc(100%/7);
+      flex-basis: calc(100%/7);
+}
+
+.contact .footer .footer__horizontal-line {
+  display: inline-block;
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.contact .footer .footer__content {
+  margin: 10px auto 0 auto;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  width: 90%;
+}
+
+.contact__triangle {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 90px solid #bc2e3a;
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
