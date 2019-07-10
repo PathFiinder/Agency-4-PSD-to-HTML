@@ -8,6 +8,7 @@
     <meta name="author" content="Krystian Konecki">
     <title>Agency - PSD to HTML</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,19 +27,19 @@
                             <a href="#" class="header__link header__link--about-us">about us</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link header__link--team">team</a>
-                        </li>
-                        <li class="header__item">
                             <a href="#" class="header__link header__link--services">services</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link header__link--process">process</a>
+                            <a href="#" class="header__link header__link--work">work</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link header__link--team">team</a>
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link header__link--clients">clients</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link header__link--work">work</a>
+                            <a href="#" class="header__link header__link--process">process</a>
                         </li>
                     </ul>
                 </nav>
@@ -143,29 +144,35 @@
                 <ul class="team__slider__main">
                     <li class="team__slider__item team__slider__item--first team__slider__item--active" data-idt="0">
                         <img src="images/team_photo_2.png" alt="Team 1 photo" class="team__slider__image">
-                        <div class="team__slider__name-container">
-                            <h3 class="team__slider__name">John Doe</h3>
-                        </div>
-                        <div class="team__slider__standing-container">
-                            <h3 class="team__slider__standing">Programmer</h3>
+                        <div class="team__slider__wrapper">
+                            <div class="team__slider__name-container">
+                                <h3 class="team__slider__name">John Doe</h3>
+                            </div>
+                            <div class="team__slider__standing-container">
+                                <h3 class="team__slider__standing">Programmer</h3>
+                            </div>
                         </div>
                     </li>
                     <li class="team__slider__item team__slider__item--second" data-idt="1">
                         <img src="images/team_1.png" alt="Team 2 photo" class="team__slider__image">
-                        <div class="team__slider__name-container">
-                            <h3 class="team__slider__name">Jimmy Doe</h3>
-                        </div>
-                        <div class="team__slider__standing-container">
-                            <h3 class="team__slider__standing">Designer</h3>
+                        <div class="team__slider__wrapper">
+                            <div class="team__slider__name-container">
+                                <h3 class="team__slider__name">Jimmy Doe</h3>
+                            </div>
+                            <div class="team__slider__standing-container">
+                                <h3 class="team__slider__standing">Designer</h3>
+                            </div>
                         </div>
                     </li>
                     <li class="team__slider__item team__slider__item--third" data-idt="2">
                         <img src="images/team_photo_3.png" alt="Team 3 photo" class="team__slider__image">
-                        <div class="team__slider__name-container">
-                            <h3 class="team__slider__name">John Doe</h3>
-                        </div>
-                        <div class="team__slider__standing-container">
-                            <h3 class="team__slider__standing">Programmer</h3>
+                        <div class="team__slider__wrapper">
+                            <div class="team__slider__name-container">
+                                <h3 class="team__slider__name">John Doe</h3>
+                            </div>
+                            <div class="team__slider__standing-container">
+                                <h3 class="team__slider__standing">Programmer</h3>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -269,6 +276,8 @@
             <div class="contact__triangle"></div>
         </section>
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/56327ab928.js"></script>
 </body>

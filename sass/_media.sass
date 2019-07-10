@@ -1,0 +1,191 @@
+@media (min-width: 360px)
+    .about-company
+        &__title
+            margin: 20px auto
+        &__content
+            margin: 20px auto
+        &__button
+            margin-top: 20px    
+    .company-services
+        height: 900px
+    .company-work
+        &__content
+            margin-top: 30px
+        &__wrapper
+            height: 200px 
+            .company-work__single-item
+                .company-work_image-title
+                    &--idea
+                        bottom: 155px
+                .company-work__image-counter
+                    right: 25px
+    .team
+        &__title
+            padding-top: 60px 
+        &__slider-wrapper
+            margin-top: 50px
+            .team__slider__main
+                .team__slider__item
+                    height: 350px
+                    .team__slider__image
+                        height: 250px
+                        width: 250px
+
+@media (min-width: 568px)
+    .slogan
+        &__title
+            left: 50%
+            transform: translateX(-50%)
+        &__model-figure
+            height: 180px
+            width: 180px
+            left: 50%
+            transform: translateX(-50%)
+    .about-company
+        &__title
+            margin: 5px auto
+        &__content
+            margin: 10px auto
+            font-size: 16px
+        &__button
+            margin: 10px auto
+        &__image-figure
+            height: 100px
+            width: 200px
+            left: 50%
+            transform: translateX(-50%)
+        &__triangle   
+            border-left: 120px solid transparent
+            border-bottom: 80px solid black
+            border-right: 120px solid transparent
+            left: 50%
+            transform: translateX(-50%)   
+    .company-services
+        height: 780px
+    .company-work
+        &__title
+            padding-top: 10px
+        &__content
+            margin-top: 10px
+            font-size: 16px
+        &__wrapper
+            height: 80px 
+            margin: 10px 0px 0px 0px
+            .company-work__single-item
+                background-size: auto
+                &--idea
+                    margin-left: 0px
+                .company-work_image-title
+                    &--idea
+                        bottom: 40px
+                        left: 15px
+                .company-work__image-content
+                    width: 100%
+                .company-work__image-counter
+                    right: 25px
+    .team
+        &__title
+            padding-top: 20px 
+        &__slider-wrapper
+            margin-top: 0px
+            height: 80%
+            .team__slider__main
+                margin-top: 10px
+                .team__slider__item
+                    height: 90%
+                    .team__slider__image
+                        height: 70%
+                        width: 60%
+
+    .clients
+        &__title
+            padding-top: 10px
+        &__wrapper
+            height: 200px
+            .clients__single-item
+                height: 200px
+                position: relative
+                .item__image
+                    height: 180px
+                    width: 180px
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    transform: translateY(-50%)
+                .item__container
+                    height: 200px
+                    .container__image
+                        height: 20px
+                        width: 20px  
+                        top: 30%
+                        left: 35%
+                    .container__content
+                        width: 60%
+                        top: calc(30% + 20px)
+                    .container__author
+                        bottom: 25px
+                        right: 20px
+        &__miniature-images
+            width: 40%
+    
+    .contact
+        &__wrapper
+            flex-direction: row
+            flex-wrap: nowrap
+            overflow: hidden
+            height: 100px
+        .contact__single-item
+            height: 100%
+            overflow: hidden
+            .single-item__icon
+                left: 5px
+            .single-item__content
+                font-size: 13.5px
+            &:nth-of-type(1)
+                margin-left: 20px
+        .footer
+            margin-top: 10px
+
+@media (min-width: 667px)
+    .slogan
+        &__model-figure
+            height: 220px
+            width: 220px
+
+@media (min-width: 731px)
+    .about-company, .company-work
+        height: 80vh
+
+@media (min-width: 812px)
+    .company-services
+        height: 680px
+
+@media (min-height: 700px)
+    .slogan
+        &__title
+            bottom: 120px
+        &__model-figure
+            bottom: 200px     
+    .about-company
+        height: 80vh
+    .company-work
+        height: 80vh
+        &__triangle--red
+            border-top: 50vh solid transparent    
+            border-bottom: 50vh solid transparent 
+    .team
+        height: 80vh
+    .clients
+        height: 80vh
+        &__triangle--red
+            border-top: 48vh solid transparent
+            border-bottom: 48vh solid transparent
+            top: -8vh
+    .contact
+        height: 80vh
+                     
+@media (min-height: 1024px)                    
+    .slogan
+        &__model-figure
+            height: 500px
+            width: 500px

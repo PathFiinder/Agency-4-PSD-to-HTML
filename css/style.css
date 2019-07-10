@@ -11,17 +11,10 @@ html, body {
 
 body {
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
   position: relative;
-}
-
-@font-face {
-  font-family: "Peace Sans";
-  src: url("../fonts/peace_sans.otf") format("otf");
-  font-weight: 400;
-  font-style: normal;
 }
 
 .slogan {
@@ -162,10 +155,9 @@ body {
 }
 
 .about-company__title {
-  font-family: "Peace Sans";
-  font-weight: 400;
+  font-family: 'Notable', sans-serif;
   color: #494949;
-  font-size: 28px;
+  font-size: 23px;
   margin: 10px 0;
 }
 
@@ -192,9 +184,6 @@ body {
 
 .about-company__image-figure {
   position: absolute;
-}
-
-.about-company__image-figure--laptop {
   bottom: 20px;
   left: 0;
   z-index: 1;
@@ -221,13 +210,15 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 0;
+  height: 1000px;
+  overflow: hidden;
 }
 
 .company-services__title {
-  font-family: "Peace Sans";
-  font-weight: 400;
+  font-family: 'Notable', sans-serif;
   color: #494949;
-  font-size: 28px;
+  font-size: 23px;
+  letter-spacing: 2px;
   padding-top: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -308,10 +299,10 @@ body {
 }
 
 .company-work__title {
-  font-family: "Peace Sans";
-  font-weight: 400;
+  font-family: 'Notable', sans-serif;
   color: #494949;
-  font-size: 28px;
+  font-size: 23px;
+  letter-spacing: 2px;
   padding-top: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -346,6 +337,7 @@ body {
 }
 
 .company-work__wrapper .company-work__single-item {
+  height: 100%;
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
   -webkit-transform: skew(-20deg);
@@ -442,10 +434,10 @@ body {
 }
 
 .team__title {
-  font-family: "Peace Sans";
-  font-weight: 400;
+  font-family: 'Notable', sans-serif;
   color: #494949;
-  font-size: 28px;
+  font-size: 23px;
+  letter-spacing: 2px;
   padding-top: 50px;
   margin-bottom: 10px;
   text-align: center;
@@ -456,6 +448,7 @@ body {
   width: 100%;
   margin-top: 30px;
   position: relative;
+  overflow: hidden;
 }
 
 .team__slider-wrapper .team__slider__arrow {
@@ -498,7 +491,7 @@ body {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   list-style: none;
-  width: 200px;
+  width: 70%;
   height: 300px;
   position: absolute;
   top: 50%;
@@ -512,29 +505,34 @@ body {
 .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
   height: 220px;
   width: 220px;
-  margin-left: -10px;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__name-container {
-  width: 120px;
+.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper {
+  margin: -40px auto 0 auto;
+  width: 150px;
+  overflow: hidden;
+}
+
+.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container {
+  width: 90%;
   height: 40px;
   color: white;
   line-height: 40px;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
   background-color: black;
-  margin: -40px auto 0 auto;
+  margin: 0px auto;
   z-index: -1;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__name-container .team__slider__name {
+.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container .team__slider__name {
   font-family: "Open Sans";
   font-size: 22px;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__standing-container {
+.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container {
   background-color: #bc2e3a;
   color: white;
   width: 80px;
@@ -542,13 +540,13 @@ body {
   line-height: 30px;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
-  margin-left: 70px;
   margin-top: -5px;
+  margin-left: calc(100% - 67.5px - 40px);
   overflow: hidden;
   z-index: 0;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__standing-container .team__slider__standing {
+.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container .team__slider__standing {
   font-size: 12px;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
@@ -570,13 +568,14 @@ body {
 }
 
 .clients__title {
-  font-family: "Peace Sans";
-  font-weight: 400;
+  font-family: 'Notable', sans-serif;
   color: #494949;
-  font-size: 28px;
-  padding-top: 50px;
-  margin-bottom: 10px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  padding-top: 30px;
+  width: 80%;
   text-align: center;
+  margin: 0 auto 10px auto;
 }
 
 .clients__wrapper {
@@ -598,8 +597,7 @@ body {
 
 .clients__wrapper .clients__single-item {
   width: 100%;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  height: 400px;
 }
 
 .clients__wrapper .clients__single-item .item__image {
@@ -715,13 +713,14 @@ body {
   text-align: center;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 .contact__title {
-  font-family: "Peace Sans";
-  font-weight: 400;
+  font-family: 'Notable', sans-serif;
   color: #9f9f9f;
-  font-size: 30px;
+  font-size: 23px;
+  letter-spacing: 2px;
   padding-top: 20px;
   margin-bottom: 30px;
   text-align: center;
@@ -828,5 +827,256 @@ body {
   bottom: 0;
   right: -50px;
   z-index: -1;
+}
+
+@media (min-width: 360px) {
+  .about-company__title {
+    margin: 20px auto;
+  }
+  .about-company__content {
+    margin: 20px auto;
+  }
+  .about-company__button {
+    margin-top: 20px;
+  }
+  .company-services {
+    height: 900px;
+  }
+  .company-work__content {
+    margin-top: 30px;
+  }
+  .company-work__wrapper {
+    height: 200px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work_image-title--idea {
+    bottom: 155px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work__image-counter {
+    right: 25px;
+  }
+  .team__title {
+    padding-top: 60px;
+  }
+  .team__slider-wrapper {
+    margin-top: 50px;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item {
+    height: 350px;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 568px) {
+  .slogan__title {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .slogan__model-figure {
+    height: 180px;
+    width: 180px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about-company__title {
+    margin: 5px auto;
+  }
+  .about-company__content {
+    margin: 10px auto;
+    font-size: 16px;
+  }
+  .about-company__button {
+    margin: 10px auto;
+  }
+  .about-company__image-figure {
+    height: 100px;
+    width: 200px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .about-company__triangle {
+    border-left: 120px solid transparent;
+    border-bottom: 80px solid black;
+    border-right: 120px solid transparent;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .company-services {
+    height: 780px;
+  }
+  .company-work__title {
+    padding-top: 10px;
+  }
+  .company-work__content {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .company-work__wrapper {
+    height: 80px;
+    margin: 10px 0px 0px 0px;
+  }
+  .company-work__wrapper .company-work__single-item {
+    background-size: auto;
+  }
+  .company-work__wrapper .company-work__single-item--idea {
+    margin-left: 0px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work_image-title--idea {
+    bottom: 40px;
+    left: 15px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work__image-content {
+    width: 100%;
+  }
+  .company-work__wrapper .company-work__single-item .company-work__image-counter {
+    right: 25px;
+  }
+  .team__title {
+    padding-top: 20px;
+  }
+  .team__slider-wrapper {
+    margin-top: 0px;
+    height: 80%;
+  }
+  .team__slider-wrapper .team__slider__main {
+    margin-top: 10px;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item {
+    height: 90%;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+    height: 70%;
+    width: 60%;
+  }
+  .clients__title {
+    padding-top: 10px;
+  }
+  .clients__wrapper {
+    height: 200px;
+  }
+  .clients__wrapper .clients__single-item {
+    height: 200px;
+    position: relative;
+  }
+  .clients__wrapper .clients__single-item .item__image {
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .clients__wrapper .clients__single-item .item__container {
+    height: 200px;
+  }
+  .clients__wrapper .clients__single-item .item__container .container__image {
+    height: 20px;
+    width: 20px;
+    top: 30%;
+    left: 35%;
+  }
+  .clients__wrapper .clients__single-item .item__container .container__content {
+    width: 60%;
+    top: calc(30% + 20px);
+  }
+  .clients__wrapper .clients__single-item .item__container .container__author {
+    bottom: 25px;
+    right: 20px;
+  }
+  .clients__miniature-images {
+    width: 40%;
+  }
+  .contact__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: hidden;
+    height: 100px;
+  }
+  .contact .contact__single-item {
+    height: 100%;
+    overflow: hidden;
+  }
+  .contact .contact__single-item .single-item__icon {
+    left: 5px;
+  }
+  .contact .contact__single-item .single-item__content {
+    font-size: 13.5px;
+  }
+  .contact .contact__single-item:nth-of-type(1) {
+    margin-left: 20px;
+  }
+  .contact .footer {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 667px) {
+  .slogan__model-figure {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+@media (min-width: 731px) {
+  .about-company, .company-work {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 812px) {
+  .company-services {
+    height: 680px;
+  }
+}
+
+@media (min-height: 700px) {
+  .slogan__title {
+    bottom: 120px;
+  }
+  .slogan__model-figure {
+    bottom: 200px;
+  }
+  .about-company {
+    height: 80vh;
+  }
+  .company-work {
+    height: 80vh;
+  }
+  .company-work__triangle--red {
+    border-top: 50vh solid transparent;
+    border-bottom: 50vh solid transparent;
+  }
+  .team {
+    height: 80vh;
+  }
+  .clients {
+    height: 80vh;
+  }
+  .clients__triangle--red {
+    border-top: 48vh solid transparent;
+    border-bottom: 48vh solid transparent;
+    top: -8vh;
+  }
+  .contact {
+    height: 80vh;
+  }
+}
+
+@media (min-height: 1024px) {
+  .slogan__model-figure {
+    height: 500px;
+    width: 500px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
