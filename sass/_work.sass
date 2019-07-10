@@ -72,22 +72,24 @@
                 text-transform: uppercase
                 transform: skew(20deg)
                 font-size: 25px
-    &__image-figure
-        position: absolute
-        top: -25%
-        right: -50%
+    &__triangle--red
+        height: 0
+        width: 0
         z-index: -1
-        height: 150%
-        width: 100%
-        .company-work__image
-            height: 100%
-            width: 100%
-    &-team__image-figure
-        height: 120px
-        width: 120px
+        border-top: 60vh solid transparent    
+        border-right: 100px solid #bc2e3a
+        border-bottom: 60vh solid transparent 
         position: absolute
-        bottom:  -60px
-        left: -60px
-        .company-work-team__image
-            height: 100%
-            width: 100%
+        top: -10vh
+        right: 0    
+    &__triangle--black
+        height: 0
+        width: 0
+        border-top: 80px solid transparent
+        border-left: 100px solid black
+        border-bottom: 80px solid transparent
+        position: absolute
+        bottom: -80px
+        left: 0
+        z-index: -1
+    

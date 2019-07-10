@@ -34,14 +34,17 @@
             bottom: 20px
             left: 0
             z-index: 1
-        &--triangle
-            bottom: 0
-            left: 0
-            z-index: 0
         .about-company__image
             height: 100%
             width: 100%
-            &--triangle
-                transform: rotate(180deg)
+    &__triangle   
+        width: 0
+        height: 0
+        border-left: 50vw solid transparent
+        border-bottom: 150px solid black
+        border-right: 50vw solid transparent
+        position: absolute
+        bottom: 0
+        left: 0   
                 
                 
