@@ -229,10 +229,10 @@
             left: 75%
         &__triangle
             border-bottom: 0px
-            border-left: 50vw solid transparent
+            border-left: 25vw solid transparent
             border-top: 500px solid black
-            border-right: 50vw solid transparent
-            left: 30%
+            border-right: 25vw solid transparent
+            left: 60%
             bottom: -72px
             transform: none  
 
@@ -330,12 +330,6 @@
                     left: 0
                     transform: none
                     margin-right: 10px
-                    &--first
-                        //top: 50%
-                        //left: 50%
-                        //transform: translate(-50%,-50%)
-                        //margin-top: 0
-                    &--second
                     &--third
                         margin-right: 0    
                     .team__slider__image
@@ -345,7 +339,7 @@
                         top: 50%
                         left: 50%
                         transform: translate(-50%,-50%)
-                        
+                        opacity: 0.5
                     .team__slider__wrapper
                         margin: 0
                         position: absolute
@@ -360,17 +354,13 @@
                             display: none
                             &--active
                                 display: block      
-                .team__slider__item--active
-                    border: 1px solid black
-                    flex-basis: 50%
-                    .team__slider__image--active
+                    &--active
+                        flex-basis: 50%
+                        .team__slider__image--active
+                            height: 280px
+                            width: 280px  
+                            opacity: 1
                         
-                        height: 280px
-                        width: 280px    
-
-
-
-
     .clients
         height: 560px
         &__title
@@ -423,7 +413,138 @@
         height: 300px
 
 
+@media (min-width: 1280px)
+    .slogan
+        .header
+            &__title
+                font-size: 45px
+            &__menu
+                .header__list
+                    width: 650px
+                    .header__item
+                        font-size: 20px
+        &__title
+            width: 800px
+            height: 500px
+            font-size: 120px 
+        &__model-figure
+            bottom: 50px
+            height: 750px
+            width: 600px
+            transform: none
+            top: 10%
+            left: 55%
+        &__button
+            font-size: 20px
+            bottom: 120px
+            transform: none
+            left: calc(50px + 400px - 48px)
 
+    .about-company
+        &__title
+            font-size: 40px
+        &__content
+            top: calc(50px + 52px)
+            font-size: 18px
+            text-align: start
+            height: 130px
+        &__button
+            top: calc(50px + 52px + 130px + 10px)
+        &__image-figure
+            width: 40%
+            height: 300px
+            bottom: calc(428px - 300px - 50px)
 
+    .company-services
+        &__title
+            font-size: 40px
+            margin-bottom: 30px
+        &__wrapper
+            .company-serices__single-service
+                .company-servies__service-title
+                    font-size: 28px
+                .company-services__service-content
+                    font-size: 22px
 
-
+    .company-work
+        &__title
+            font-size: 40px
+        &__content
+            position: absolute
+            top: 90px
+            font-size: 18px
+        &__button
+            position: absolute
+            top: calc(30px + 40px + 133px + 10px)
+        &__wrapper
+            .company-work__single-item
+                .company-work_image-title
+                    font-size: 30px
+                .company-work__image-counter
+                    font-size: 35px
+                .company-work__image-content
+                    width: 150px
+                    font-size: 15px
+            
+    .team
+        &__title
+            font-size: 40px
+        &__slider-wrapper
+            .team__slider__main
+                width: 90%
+                .team__slider__item
+                    &--third
+                        margin-right: 0    
+                    .team__slider__image
+                        height: 400px
+                        width: 400px
+                    .team__slider__wrapper
+                        top: 85%
+                       
+    .clients
+        &__title
+            top: 60px
+            font-size: 40px
+        &__wrapper
+            .clients__single-item
+                margin-top: 110px
+                .item__image
+                    height: 350px
+                    width: 350px
+                .item__container
+                    .container__image
+                        height: 50px
+                        width: 50px  
+                    .container__content
+                        font-size: 22px
+                        right: 4%
+                    .container__author
+                        width: 250px
+        &__miniature-images
+            width: 25%
+            height: 100px
+    .contact
+        &__wrapper
+            .contact__single-item
+                height: 100%
+                overflow: hidden
+                .single-item__icon
+                    left: 30px
+                    height: 50px
+                    width: 50px
+                    font-size: 50px
+                .single-item__title
+                    top: 22%
+                    left: 25%
+                .single-item__content
+                    top: 45px
+                    left: 25%
+                    font-size: 17px
+        .footer
+            .footer__list
+                &:before
+                    width: 120%
+                    left: 50%
+                    transform: translateX(-50%)
+            .footer__content
+                margin-top: 20px
