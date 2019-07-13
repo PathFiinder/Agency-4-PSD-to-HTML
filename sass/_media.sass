@@ -34,8 +34,7 @@
 @media (min-width: 568px)
     .slogan
         &__title
-            left: 50%
-            transform: translateX(-50%)
+           bottom: 0px
         &__model-figure
             height: 180px
             width: 180px
@@ -156,36 +155,275 @@
     .about-company, .company-work
         height: 80vh
 
-@media (min-width: 812px)
-    .company-services
-        height: 680px
-
-@media (min-height: 700px)
+@media (min-width: 768px) and (min-height: 768px)
     .slogan
+        height: 716px
+        .header
+            &__title
+                font-size: 40px
+            &__menu
+                display: block
+                position: absolute
+                top: 50%
+                right: 50px
+                transform: translateY(-50%)
+                .header__list
+                    flex-direction: row
+                    background-color: transparent
+                    .header__item
+                        padding-right: 15px
+                        font-size: 16px
+            &__icons-wrapper
+                top: 50%
+                transform: translateY(-50%)
+                .header__icon--search
+                    display: none
         &__title
-            bottom: 120px
+            width: 530px
+            height: 450px
+            font-size: 90px
+            bottom: 50%
+            left: 50px
+            transform: translateY(50%)
         &__model-figure
-            bottom: 200px     
-    .about-company
-        height: 80vh
-    .company-work
-        height: 80vh
-        &__triangle--red
-            border-top: 50vh solid transparent    
-            border-bottom: 50vh solid transparent 
-    .team
-        height: 80vh
-    .clients
-        height: 80vh
-        &__triangle--red
-            border-top: 48vh solid transparent
-            border-bottom: 48vh solid transparent
-            top: -8vh
-    .contact
-        height: 80vh
-                     
-@media (min-height: 1024px)                    
-    .slogan
-        &__model-figure
+            bottom: 50px
             height: 500px
-            width: 500px
+            width: 400px
+            transform: none
+            top: 10%
+            left: 55%
+        &__button
+            font-size: 20px
+            bottom: 180px
+            transform: none
+            left: calc(50px + 265px - 48px)
+
+    .about-company
+        height: 428px
+        &__title
+            margin: 0
+            position: absolute
+            top: 50px
+            left: 50px
+            font-size: 30px
+            text-transform: none
+            z-index: 1
+            letter-spacing: 2px
+        &__content
+            width: 350px
+            height: 100px
+            overflow: hidden
+            position: absolute
+            top: calc(50px + 39px)
+            left: 50px
+            z-index: 1
+        &__button
+            font-size: 20px
+            position: absolute
+            top: calc(50px + 39px + 100px + 10px)
+            left: 50px
+        &__image-figure
+            width: 50%
+            height: 250px
+            bottom: calc(428px - 250px - 50px)
+            left: 75%
+        &__triangle
+            border-bottom: 0px
+            border-left: 50vw solid transparent
+            border-top: 500px solid black
+            border-right: 50vw solid transparent
+            left: 30%
+            bottom: -72px
+            transform: none  
+
+    .company-services
+        height: 650px
+        &__title
+            font-size: 30px
+            margin-bottom: 30px
+        &__wrapper
+            height: 450px
+            width: 90%
+            margin: 50px auto
+            flex-direction: row
+            .company-serices__single-service
+                flex-basis: 33.33%
+                height: 50%
+                .company-servies__service-title
+                    font-size: 22px
+                .company-services__service-content
+                    font-size: 16px
+        &__triangle
+            border-top: 150px solid transparent
+            border-right: 0px
+            border-left: 100px solid #bc2e3a
+            border-bottom: 150px solid transparent
+            right: calc(100% - 50px)
+
+    .company-work
+        height: 450px
+        &__title
+            font-size: 30px
+            letter-spacing: 2px
+            position: absolute
+            top: 30px
+            left: 50px
+        &__content
+            position: absolute
+            top: 80px
+            left: 50px
+            width: 30%
+            height: 133px
+        &__button
+            position: absolute
+            top: calc(30px + 50px + 133px + 10px)
+            left: 50px
+            border: none
+        &__wrapper
+            margin: 0
+            position: absolute
+            top: 85px
+            left: calc(30% + 50px + 20px)
+            width: 70%
+            height: 200px
+            .company-work__single-item
+                &--idea
+                    margin-left: 36px
+                .company-work_image-title
+                    font-size: 25px
+                .company-work__image-counter
+                    font-size: 30px
+                    right: 10px
+                .company-work__image-content
+                    top: 70%
+                    left: 20px
+                    width: 120px
+                .company-work_image-title
+                    &--idea
+                        bottom: 60px
+                        left: 5px
+        &__triangle--red
+            border-top: 325px solid transparent    
+            border-right: 250px solid #bc2e3a
+            border-bottom: 325px solid transparent 
+            top: -100px
+            right: 0
+
+    .team
+        height: 600px
+        &__title
+            padding-top: 50px 
+            font-size: 30px
+            letter-spacing: 3px
+        &__slider-wrapper
+            margin-top: 0px
+            height: 500px
+            .team__slider__main
+                height: 480px
+                width: 80% //
+                .team__slider__item
+                    height: 432px
+                    margin-top: 24px
+                    flex-basis: 33.33%
+                    position: relative
+                    top: 0
+                    left: 0
+                    transform: none
+                    margin-right: 10px
+                    &--first
+                        //top: 50%
+                        //left: 50%
+                        //transform: translate(-50%,-50%)
+                        //margin-top: 0
+                    &--second
+                    &--third
+                        margin-right: 0    
+                    .team__slider__image
+                        height: 220px
+                        width: 220px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        
+                    .team__slider__wrapper
+                        margin: 0
+                        position: absolute
+                        top: 70%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        .team__slider__name-container
+                            background-color: rgba(0,0,0,0.75)
+                            &--active
+                                background-color: black
+                        .team__slider__standing-container  
+                            display: none
+                            &--active
+                                display: block      
+                .team__slider__item--active
+                    border: 1px solid black
+                    flex-basis: 50%
+                    .team__slider__image--active
+                        
+                        height: 280px
+                        width: 280px    
+
+
+
+
+    .clients
+        height: 560px
+        &__title
+            position: absolute
+            top: 80px
+            left: 150px
+            width: auto
+            letter-spacing: 2px
+            font-size: 30px
+        &__wrapper
+            height: 450px
+            .clients__single-item
+                height: 450px
+                margin-top: 80px
+                .item__image
+                    height: 250px
+                    width: 250px
+                .item__container
+                    height: 350px
+                    .container__image
+                        height: 40px
+                        width: 40px  
+                        top: 30%
+                        left: 35%
+                    .container__content
+                        font-size: 20px
+                        width: 55%
+                        right: 2%
+                        height: 100px
+                        
+                    .container__author
+                        bottom: 25px
+                        width: 220px
+                        height: 20px
+                        right: 20px
+                        top: calc(30% + 20px + 100px + 22px)
+        &__miniature-images
+            width: 30%
+            height: 80px
+        &__triangle--black
+            border-top: 200px solid black
+            border-left: 200px solid transparent
+        &__triangle--red
+            border-top: 330px solid transparent
+            border-left: 150px solid #bc2e3a
+            border-bottom: 330px solid transparent
+            top: -50px
+
+    .contact
+        height: 300px
+
+
+
+
+
+

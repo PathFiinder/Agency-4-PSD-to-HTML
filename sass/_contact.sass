@@ -62,6 +62,18 @@
             flex-wrap: nowrap
             margin: 20px auto 5px auto
             width: 60%
+            position: relative
+            height: 25px
+            padding-top: 10px
+            &:before
+                content: ""
+                display: block
+                width: 150%
+                height: 2px
+                background-color: #ffffff
+                position: absolute
+                top: 0
+                left: -25%
             .footer__item
                 list-style: none
                 flex-basis: calc(100%/7) 

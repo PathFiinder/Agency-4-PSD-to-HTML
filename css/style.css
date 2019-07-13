@@ -103,8 +103,12 @@ body {
 .slogan__title {
   text-transform: uppercase;
   position: absolute;
-  bottom: 70px;
-  left: 0;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 150px;
+  width: 300px;
   text-align: center;
   font-size: 35px;
   background-image: url("https://pathfiinder.github.io/Agency-4-PSD-to-HTML/images/slogan_bgc.png");
@@ -203,6 +207,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .company-services {
@@ -234,7 +240,6 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: transparent;
 }
 
 .company-services__wrapper .company-serices__single-service {
@@ -485,6 +490,10 @@ body {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .team__slider-wrapper .team__slider__main .team__slider__item {
@@ -794,6 +803,20 @@ body {
       flex-wrap: nowrap;
   margin: 20px auto 5px auto;
   width: 60%;
+  position: relative;
+  height: 25px;
+  padding-top: 10px;
+}
+
+.contact .footer .footer__list:before {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: -25%;
 }
 
 .contact .footer .footer__list .footer__item {
@@ -871,9 +894,7 @@ body {
 
 @media (min-width: 568px) {
   .slogan__title {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    bottom: 0px;
   }
   .slogan__model-figure {
     height: 180px;
@@ -1034,49 +1055,329 @@ body {
   }
 }
 
-@media (min-width: 812px) {
-  .company-services {
-    height: 680px;
+@media (min-width: 768px) and (min-height: 768px) {
+  .slogan {
+    height: 716px;
   }
-}
-
-@media (min-height: 700px) {
+  .slogan .header__title {
+    font-size: 40px;
+  }
+  .slogan .header__menu {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .slogan .header__menu .header__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: transparent;
+  }
+  .slogan .header__menu .header__list .header__item {
+    padding-right: 15px;
+    font-size: 16px;
+  }
+  .slogan .header__icons-wrapper {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .slogan .header__icons-wrapper .header__icon--search {
+    display: none;
+  }
   .slogan__title {
-    bottom: 120px;
+    width: 530px;
+    height: 450px;
+    font-size: 90px;
+    bottom: 50%;
+    left: 50px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
   .slogan__model-figure {
-    bottom: 200px;
+    bottom: 50px;
+    height: 500px;
+    width: 400px;
+    -webkit-transform: none;
+            transform: none;
+    top: 10%;
+    left: 55%;
+  }
+  .slogan__button {
+    font-size: 20px;
+    bottom: 180px;
+    -webkit-transform: none;
+            transform: none;
+    left: calc(50px + 265px - 48px);
   }
   .about-company {
-    height: 80vh;
+    height: 428px;
+  }
+  .about-company__title {
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 30px;
+    text-transform: none;
+    z-index: 1;
+    letter-spacing: 2px;
+  }
+  .about-company__content {
+    width: 350px;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(50px + 39px);
+    left: 50px;
+    z-index: 1;
+  }
+  .about-company__button {
+    font-size: 20px;
+    position: absolute;
+    top: calc(50px + 39px + 100px + 10px);
+    left: 50px;
+  }
+  .about-company__image-figure {
+    width: 50%;
+    height: 250px;
+    bottom: calc(428px - 250px - 50px);
+    left: 75%;
+  }
+  .about-company__triangle {
+    border-bottom: 0px;
+    border-left: 50vw solid transparent;
+    border-top: 500px solid black;
+    border-right: 50vw solid transparent;
+    left: 30%;
+    bottom: -72px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .company-services {
+    height: 650px;
+  }
+  .company-services__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .company-services__wrapper {
+    height: 450px;
+    width: 90%;
+    margin: 50px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .company-services__wrapper .company-serices__single-service {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    height: 50%;
+  }
+  .company-services__wrapper .company-serices__single-service .company-servies__service-title {
+    font-size: 22px;
+  }
+  .company-services__wrapper .company-serices__single-service .company-services__service-content {
+    font-size: 16px;
+  }
+  .company-services__triangle {
+    border-top: 150px solid transparent;
+    border-right: 0px;
+    border-left: 100px solid #bc2e3a;
+    border-bottom: 150px solid transparent;
+    right: calc(100% - 50px);
   }
   .company-work {
-    height: 80vh;
+    height: 450px;
+  }
+  .company-work__title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .company-work__content {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    width: 30%;
+    height: 133px;
+  }
+  .company-work__button {
+    position: absolute;
+    top: calc(30px + 50px + 133px + 10px);
+    left: 50px;
+    border: none;
+  }
+  .company-work__wrapper {
+    margin: 0;
+    position: absolute;
+    top: 85px;
+    left: calc(30% + 50px + 20px);
+    width: 70%;
+    height: 200px;
+  }
+  .company-work__wrapper .company-work__single-item--idea {
+    margin-left: 36px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work_image-title {
+    font-size: 25px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work__image-counter {
+    font-size: 30px;
+    right: 10px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work__image-content {
+    top: 70%;
+    left: 20px;
+    width: 120px;
+  }
+  .company-work__wrapper .company-work__single-item .company-work_image-title--idea {
+    bottom: 60px;
+    left: 5px;
   }
   .company-work__triangle--red {
-    border-top: 50vh solid transparent;
-    border-bottom: 50vh solid transparent;
+    border-top: 325px solid transparent;
+    border-right: 250px solid #bc2e3a;
+    border-bottom: 325px solid transparent;
+    top: -100px;
+    right: 0;
   }
   .team {
-    height: 80vh;
+    height: 600px;
+  }
+  .team__title {
+    padding-top: 50px;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .team__slider-wrapper {
+    margin-top: 0px;
+    height: 500px;
+  }
+  .team__slider-wrapper .team__slider__main {
+    height: 480px;
+    width: 80%;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item {
+    height: 432px;
+    margin-top: 24px;
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    margin-right: 10px;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item--third {
+    margin-right: 0;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+    height: 220px;
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container--active {
+    background-color: black;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container {
+    display: none;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container--active {
+    display: block;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item--active {
+    border: 1px solid black;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .team__slider-wrapper .team__slider__main .team__slider__item--active .team__slider__image--active {
+    height: 280px;
+    width: 280px;
   }
   .clients {
-    height: 80vh;
+    height: 560px;
+  }
+  .clients__title {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: auto;
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+  .clients__wrapper {
+    height: 450px;
+  }
+  .clients__wrapper .clients__single-item {
+    height: 450px;
+    margin-top: 80px;
+  }
+  .clients__wrapper .clients__single-item .item__image {
+    height: 250px;
+    width: 250px;
+  }
+  .clients__wrapper .clients__single-item .item__container {
+    height: 350px;
+  }
+  .clients__wrapper .clients__single-item .item__container .container__image {
+    height: 40px;
+    width: 40px;
+    top: 30%;
+    left: 35%;
+  }
+  .clients__wrapper .clients__single-item .item__container .container__content {
+    font-size: 20px;
+    width: 55%;
+    right: 2%;
+    height: 100px;
+  }
+  .clients__wrapper .clients__single-item .item__container .container__author {
+    bottom: 25px;
+    width: 220px;
+    height: 20px;
+    right: 20px;
+    top: calc(30% + 20px + 100px + 22px);
+  }
+  .clients__miniature-images {
+    width: 30%;
+    height: 80px;
+  }
+  .clients__triangle--black {
+    border-top: 200px solid black;
+    border-left: 200px solid transparent;
   }
   .clients__triangle--red {
-    border-top: 48vh solid transparent;
-    border-bottom: 48vh solid transparent;
-    top: -8vh;
+    border-top: 330px solid transparent;
+    border-left: 150px solid #bc2e3a;
+    border-bottom: 330px solid transparent;
+    top: -50px;
   }
   .contact {
-    height: 80vh;
-  }
-}
-
-@media (min-height: 1024px) {
-  .slogan__model-figure {
-    height: 500px;
-    width: 500px;
+    height: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

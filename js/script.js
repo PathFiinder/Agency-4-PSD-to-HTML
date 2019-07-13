@@ -59,8 +59,20 @@ rightArrow.addEventListener('click', () => {
     if (index == 3) {
         index = 0;
     }
-    [...teamArray].forEach(element => element.classList.remove('team__slider__item--active'));
+    
+    [...teamArray].forEach(element =>{ 
+        element.classList.remove('team__slider__item--active');
+        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__name-container`).classList.remove('team__slider__name-container--active')
+        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
+        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
+        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__standing-container`).classList.remove('team__slider__standing-container--active');
+    });
+
     document.querySelector(`[data-idt="${index}"]`).classList.add('team__slider__item--active');
+    document.querySelector(`[data-idt="${index}"] .team__slider__image`).classList.add('team__slider__image--active');
+    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__name-container`).classList.add('team__slider__name-container--active');
+    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__standing-container`).classList.add('team__slider__standing-container--active');
+   
 });
 
 leftArrow.addEventListener('click', () => {
@@ -68,8 +80,20 @@ leftArrow.addEventListener('click', () => {
     if (index == -1) {
         index = 2;
     }
-    [...teamArray].forEach(element => element.classList.remove('team__slider__item--active'));
+
+    [...teamArray].forEach(element =>{ 
+        element.classList.remove('team__slider__item--active');
+        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__name-container`).classList.remove('team__slider__name-container--active')
+        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
+        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
+        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__standing-container`).classList.remove('team__slider__standing-container--active');
+    });
+
     document.querySelector(`[data-idt="${index}"]`).classList.add('team__slider__item--active');
+    document.querySelector(`[data-idt="${index}"] .team__slider__image`).classList.add('team__slider__image--active');
+    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__name-container`).classList.add('team__slider__name-container--active');
+    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__standing-container`).classList.add('team__slider__standing-container--active');
+   
 })
 
 
