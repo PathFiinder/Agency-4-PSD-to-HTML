@@ -17,7 +17,7 @@
         margin-top: 30px
         position: relative
         overflow: hidden
-        .team__slider__arrow
+        .team__arrow
             width: 0px
             height: 0px
             background-color: transparent
@@ -34,7 +34,7 @@
                 border-left: 35px solid #424240
                 border-bottom: 30px solid transparent
                 right: 10px
-        .team__slider__main
+        .team__main-slider
             display: flex
             flex-direction: row
             flex-wrap: nowrap
@@ -42,7 +42,7 @@
             width: 80%
             overflow: hidden
             margin: 0 auto
-            .team__slider__item 
+            .team__item-slider
                 flex-basis: 100%
                 list-style: none
                 width: 70%
@@ -53,14 +53,14 @@
                 transform: translate(-50%,-50%)
                 overflow: hidden
                 text-align: center
-                .team__slider__image
+                .team__image-slider
                     height: 220px
                     width: 220px
-                .team__slider__wrapper
+                .team__wrapper-slider
                     margin: -40px auto 0 auto
                     width: 150px
                     overflow: hidden
-                    .team__slider__name-container     
+                    .team__name-container   
                         width: 90%
                         height: 40px
                         color: white
@@ -69,11 +69,11 @@
                         background-color: black
                         margin: 0px auto
                         z-index: -1
-                        .team__slider__name
+                        .team__name
                             font-family: "Open Sans"
                             font-size: 22px
                             transform: skew(-20deg)
-                    .team__slider__standing-container
+                    .team__standing-container
                         background-color: #bc2e3a
                         color: white
                         width: 80px
@@ -84,11 +84,11 @@
                         margin-left: calc(100% - 67.5px - 40px)
                         overflow: hidden
                         z-index: 0
-                        .team__slider__standing
+                        .team__standing
                             font-size: 12px
                             transform: skew(-20deg)
-            .team__slider__item--first,.team__slider__item--second,.team__slider__item--third    
+            .team__item-slider--first,.team__item-slider--second,.team__item-slider--third    
                 z-index: 0
-            .team__slider__item--active
+            .team__item-slider--active
                 z-index: 1
 

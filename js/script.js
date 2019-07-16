@@ -48,9 +48,9 @@ buttonsArray.forEach((element,index) => {
 
 //Team
 
-const teamArray = document.querySelectorAll('.team__slider__item');
-const leftArrow = document.querySelector('.team__slider__arrow--left');
-const rightArrow = document.querySelector('.team__slider__arrow--right');
+const teamArray = document.querySelectorAll('.team__item-slider');
+const leftArrow = document.querySelector('.team__arrow--left');
+const rightArrow = document.querySelector('.team__arrow--right');
 
 let index = 0;
 
@@ -61,18 +61,17 @@ rightArrow.addEventListener('click', () => {
     }
     
     [...teamArray].forEach(element =>{ 
-        element.classList.remove('team__slider__item--active');
-        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__name-container`).classList.remove('team__slider__name-container--active')
-        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
-        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
-        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__standing-container`).classList.remove('team__slider__standing-container--active');
+        element.classList.remove('team__item-slider--active');
+        document.querySelector(`.${element.classList[1]} .team__wrapper-slider  .team__name-container`).classList.remove('team__name-container--active')
+        document.querySelector(`.${element.classList[1]} .team__image-slider`).classList.remove('team__image-slider--active');
+        document.querySelector(`.${element.classList[1]} .team__image-slider`).classList.remove('team__image-slider--active');
+        document.querySelector(`.${element.classList[1]} .team__wrapper-slider  .team__standing-container`).classList.remove('team__standing-container--active');
     });
 
-    document.querySelector(`[data-idt="${index}"]`).classList.add('team__slider__item--active');
-    document.querySelector(`[data-idt="${index}"] .team__slider__image`).classList.add('team__slider__image--active');
-    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__name-container`).classList.add('team__slider__name-container--active');
-    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__standing-container`).classList.add('team__slider__standing-container--active');
-   
+    document.querySelector(`[data-idt="${index}"]`).classList.add('team__item-slider--active');
+    document.querySelector(`[data-idt="${index}"] .team__image-slider`).classList.add('team__image-slider--active');
+    document.querySelector(`[data-idt="${index}"] .team__wrapper-slider .team__name-container`).classList.add('team__name-container--active');
+    document.querySelector(`[data-idt="${index}"] .team__wrapper-slider  .team__standing-container`).classList.add('team__standing-container--active');
 });
 
 leftArrow.addEventListener('click', () => {
@@ -82,17 +81,17 @@ leftArrow.addEventListener('click', () => {
     }
 
     [...teamArray].forEach(element =>{ 
-        element.classList.remove('team__slider__item--active');
-        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__name-container`).classList.remove('team__slider__name-container--active')
-        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
-        document.querySelector(`.${element.classList[1]} .team__slider__image`).classList.remove('team__slider__image--active');
-        document.querySelector(`.${element.classList[1]} .team__slider__wrapper  .team__slider__standing-container`).classList.remove('team__slider__standing-container--active');
+        element.classList.remove('team__item-slider--active');
+        document.querySelector(`.${element.classList[1]} .team__wrapper-slider  .team__name-container`).classList.remove('team__name-container--active')
+        document.querySelector(`.${element.classList[1]} .team__image-slider`).classList.remove('team__image-slider--active');
+        document.querySelector(`.${element.classList[1]} .team__image-slider`).classList.remove('team__image-slider--active');
+        document.querySelector(`.${element.classList[1]} .team__wrapper-slider .team__standing-container`).classList.remove('team__standing-container--active');
     });
 
-    document.querySelector(`[data-idt="${index}"]`).classList.add('team__slider__item--active');
-    document.querySelector(`[data-idt="${index}"] .team__slider__image`).classList.add('team__slider__image--active');
-    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__name-container`).classList.add('team__slider__name-container--active');
-    document.querySelector(`[data-idt="${index}"] .team__slider__wrapper  .team__slider__standing-container`).classList.add('team__slider__standing-container--active');
+    document.querySelector(`[data-idt="${index}"]`).classList.add('team__item-slider--active');
+    document.querySelector(`[data-idt="${index}"] .team__image-slider`).classList.add('team__image-slider--active');
+    document.querySelector(`[data-idt="${index}"] .team__wrapper-slider .team__name-container`).classList.add('team__name-container--active');
+    document.querySelector(`[data-idt="${index}"] .team__wrapper-slider  .team__standing-container`).classList.add('team__standing-container--active');
    
 })
 

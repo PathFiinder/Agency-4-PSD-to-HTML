@@ -457,7 +457,7 @@ body {
   overflow: hidden;
 }
 
-.team__slider-wrapper .team__slider__arrow {
+.team__slider-wrapper .team__arrow {
   width: 0px;
   height: 0px;
   background-color: transparent;
@@ -467,21 +467,21 @@ body {
           transform: translateY(-50%);
 }
 
-.team__slider-wrapper .team__slider__arrow--left {
+.team__slider-wrapper .team__arrow--left {
   border-top: 30px solid transparent;
   border-right: 35px solid #424240;
   border-bottom: 30px solid transparent;
   left: 10px;
 }
 
-.team__slider-wrapper .team__slider__arrow--right {
+.team__slider-wrapper .team__arrow--right {
   border-top: 30px solid transparent;
   border-left: 35px solid #424240;
   border-bottom: 30px solid transparent;
   right: 10px;
 }
 
-.team__slider-wrapper .team__slider__main {
+.team__slider-wrapper .team__main-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,7 +497,7 @@ body {
   margin: 0 auto;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item {
+.team__slider-wrapper .team__main-slider .team__item-slider {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   list-style: none;
@@ -512,18 +512,18 @@ body {
   text-align: center;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+.team__slider-wrapper .team__main-slider .team__item-slider .team__image-slider {
   height: 220px;
   width: 220px;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper {
+.team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider {
   margin: -40px auto 0 auto;
   width: 150px;
   overflow: hidden;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container {
+.team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__name-container {
   width: 90%;
   height: 40px;
   color: white;
@@ -535,14 +535,14 @@ body {
   z-index: -1;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container .team__slider__name {
+.team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__name-container .team__name {
   font-family: "Open Sans";
   font-size: 22px;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container {
+.team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__standing-container {
   background-color: #bc2e3a;
   color: white;
   width: 80px;
@@ -556,17 +556,17 @@ body {
   z-index: 0;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container .team__slider__standing {
+.team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__standing-container .team__standing {
   font-size: 12px;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item--first, .team__slider-wrapper .team__slider__main .team__slider__item--second, .team__slider-wrapper .team__slider__main .team__slider__item--third {
+.team__slider-wrapper .team__main-slider .team__item-slider--first, .team__slider-wrapper .team__main-slider .team__item-slider--second, .team__slider-wrapper .team__main-slider .team__item-slider--third {
   z-index: 0;
 }
 
-.team__slider-wrapper .team__slider__main .team__slider__item--active {
+.team__slider-wrapper .team__main-slider .team__item-slider--active {
   z-index: 1;
 }
 
@@ -877,10 +877,10 @@ body {
   .team__slider-wrapper {
     margin-top: 50px;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item {
+  .team__slider-wrapper .team__main-slider .team__item-slider {
     height: 350px;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__image-slider {
     height: 250px;
     width: 250px;
   }
@@ -959,13 +959,13 @@ body {
     margin-top: 0px;
     height: 80%;
   }
-  .team__slider-wrapper .team__slider__main {
+  .team__slider-wrapper .team__main-slider {
     margin-top: 10px;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item {
+  .team__slider-wrapper .team__main-slider .team__item-slider {
     height: 90%;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__image-slider {
     height: 70%;
     width: 60%;
   }
@@ -1255,11 +1255,11 @@ body {
     margin-top: 0px;
     height: 500px;
   }
-  .team__slider-wrapper .team__slider__main {
+  .team__slider-wrapper .team__main-slider {
     height: 480px;
     width: 80%;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item {
+  .team__slider-wrapper .team__main-slider .team__item-slider {
     height: 432px;
     margin-top: 24px;
     -ms-flex-preferred-size: 33.33%;
@@ -1271,10 +1271,10 @@ body {
             transform: none;
     margin-right: 10px;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item--third {
+  .team__slider-wrapper .team__main-slider .team__item-slider--third {
     margin-right: 0;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__image-slider {
     height: 220px;
     width: 220px;
     position: absolute;
@@ -1284,7 +1284,7 @@ body {
             transform: translate(-50%, -50%);
     opacity: 0.5;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider {
     margin: 0;
     position: absolute;
     top: 70%;
@@ -1292,23 +1292,23 @@ body {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__name-container {
     background-color: rgba(0, 0, 0, 0.75);
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__name-container--active {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__name-container--active {
     background-color: black;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__standing-container {
     display: none;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper .team__slider__standing-container--active {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider .team__standing-container--active {
     display: block;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item--active {
+  .team__slider-wrapper .team__main-slider .team__item-slider--active {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item--active .team__slider__image--active {
+  .team__slider-wrapper .team__main-slider .team__item-slider--active .team__image-slider--active {
     height: 280px;
     width: 280px;
     opacity: 1;
@@ -1462,17 +1462,17 @@ body {
   .team__title {
     font-size: 40px;
   }
-  .team__slider-wrapper .team__slider__main {
+  .team__slider-wrapper .team__main-slider {
     width: 90%;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item--third {
+  .team__slider-wrapper .team__main-slider .team__item-slider--third {
     margin-right: 0;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__image {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__image-slider {
     height: 400px;
     width: 400px;
   }
-  .team__slider-wrapper .team__slider__main .team__slider__item .team__slider__wrapper {
+  .team__slider-wrapper .team__main-slider .team__item-slider .team__wrapper-slider {
     top: 85%;
   }
   .clients__title {
